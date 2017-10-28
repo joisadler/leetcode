@@ -6,7 +6,7 @@
 
 
 /*
-Accepted but maybe inefficient:
+Brute force method, accepted but inefficient (O(n)^2):
 */
 
 const twoSum = (nums, target) => {
