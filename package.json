@@ -1,0 +1,32 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "My solutions for [LeetCode](https://leetcode.com/) problems.",
+  "main": "",
+  "scripts": {
+    "test": "jest",
+    "babel-node": "babel-node",
+    "eslint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joisadler/leetcode.git"
+  },
+  "author": "Yossi Adler <joisadler@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joisadler/leetcode/issues"
+  },
+  "homepage": "https://github.com/joisadler/leetcode#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "jest": "^20.0.4"
+  }
+}
