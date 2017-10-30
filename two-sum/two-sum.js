@@ -44,3 +44,26 @@ const twoSum2 = (nums, target) => {
     }
     throw new Error('No two sum solution');
 };
+
+/*
+Approach #3 (One-pass Hash Table), O(n)
+*/
+
+const twoSum3 = (nums, target) => {
+    const map = new Map();
+
+    for (let i = 0; i < nums.length; i += 1) {
+        const currentNumber = nums[i];
+        const currentNumberIndex = i;
+        const complement = target - currentNumber;
+        const complementIndex = map.get(complement);
+
+        if (map.has(complement) && complementIndex !== currentNumberIndex) {
+            return [complementIndex, currentNumberIndex];
+        }
+        map.set(currentNumber, currentNumberIndex);
+    }
+    throw new Error('No two sum solution');
+};
+
+export { twoSum, twoSum2, twoSum3 };
