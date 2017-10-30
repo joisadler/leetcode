@@ -2,6 +2,11 @@
  * @param {number[]} nums
  * @return {number}
  */
+
+/*
+Hash Table Approach, O(n)
+*/
+
 const singleNumber = (nums) => {
     const map = new Map();
     let result = 0;
