@@ -1,1 +1,1 @@
-My solutions for [LeetCode](https://leetcode.com/) problems.
+My solutions for [LeetCode](https://leetcode.com/joisadler/) problems.
