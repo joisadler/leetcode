@@ -3,6 +3,10 @@
  * @return {boolean}
  */
 
+/*
+First attempt — with usage of classes. Accepted but too long :(
+*/
+
 class Robot {
     constructor() {
         this.position = { x: 0, y: 0 };
@@ -56,4 +60,35 @@ const judgeCircle = (moves) => {
     return newPosition.x === 0 && newPosition.y === 0;
 };
 
-export default judgeCircle;
+/*
+Shorter solution. Without the need for classes.
+*/
+
+const judgeCircle2 = (moves) => {
+    let uCount = 0;
+    let dCount = 0;
+    let rCount = 0;
+    let lCount = 0;
+
+    for (let i = 0; i < moves.length; i += 1) {
+        const currentMove = moves[i];
+        switch (currentMove) {
+        case 'U':
+            uCount += 1;
+            break;
+        case 'D':
+            dCount += 1;
+            break;
+        case 'R':
+            rCount += 1;
+            break;
+        case 'L':
+            lCount += 1;
+            break;
+        default:
+        }
+    }
+    return uCount === dCount && rCount === lCount;
+};
+
+export { judgeCircle, judgeCircle2 };
