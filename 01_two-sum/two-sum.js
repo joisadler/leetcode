@@ -1,10 +1,3 @@
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
-
-
 /*
 Brute force method, accepted but inefficient, O(n)^2
 */

@@ -1,8 +1,3 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
-
 const qsort = (arr) => {
     if (arr.length <= 1) {
         return arr;

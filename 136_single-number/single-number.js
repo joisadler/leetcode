@@ -1,8 +1,3 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
-
 /*
 Hash Table Approach, O(n)
 */

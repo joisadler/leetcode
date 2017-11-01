@@ -1,7 +1,3 @@
-/**
- * @param {number} num
- * @return {number}
- */
 const findComplement = (num) => {
     const bin = num.toString(2);
     let newBin = '';

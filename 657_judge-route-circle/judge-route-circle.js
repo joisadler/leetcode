@@ -1,8 +1,3 @@
-/**
- * @param {string} moves
- * @return {boolean}
- */
-
 /*
 First attempt — with usage of classes. Accepted but too long :(
 */
