@@ -1,9 +1,14 @@
+/*
+Time complexity : O(m∗n).
+We traverse over m*n elements twice.
+Here, m and n refer to the number of rows and columns of the given matrix respectively.
+*/
 const matrixReshape = (nums, r, c) => {
     const originalR = nums.length;
     const originalC = nums[0].length;
     const result = [];
 
-    if (r * c > originalR * originalC) {
+    if (r * c !== originalR * originalC) {
         return nums;
     }
     const interNums = nums.reduce((acc, row) => {
