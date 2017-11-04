@@ -1,17 +1,17 @@
 const fizzBuzz = (n) => {
-    const result = [];
-    for (let i = 1; i <= n; i += 1) {
-        let currentStr = String(i);
-        if (i % 3 === 0 && i % 5 === 0) {
-            currentStr = 'FizzBuzz';
-        } else if (i % 3 === 0) {
-            currentStr = 'Fizz';
-        } else if (i % 5 === 0) {
-            currentStr = 'Buzz';
-        }
-        result.push(currentStr);
+  const result = [];
+  for (let i = 1; i <= n; i += 1) {
+    let currentStr = String(i);
+    if (i % 3 === 0 && i % 5 === 0) {
+      currentStr = 'FizzBuzz';
+    } else if (i % 3 === 0) {
+      currentStr = 'Fizz';
+    } else if (i % 5 === 0) {
+      currentStr = 'Buzz';
     }
-    return result;
+    result.push(currentStr);
+  }
+  return result;
 };
 
 console.log(fizzBuzz(15));

@@ -5,16 +5,16 @@ In the worst case, we do so for every element of candies array.
 */
 
 const distributeCandies = (candies) => {
-    const kinds = candies.reduce((acc, candy) => {
-        if (!acc.includes(candy)) {
-            acc.push(candy);
-        }
-        return acc;
-    }, []);
-    const candiesToEachChild = candies.length / 2;
-    const numberOfKinds = kinds.length;
+  const kinds = candies.reduce((acc, candy) => {
+    if (!acc.includes(candy)) {
+      acc.push(candy);
+    }
+    return acc;
+  }, []);
+  const candiesToEachChild = candies.length / 2;
+  const numberOfKinds = kinds.length;
 
-    return Math.min(candiesToEachChild, numberOfKinds);
+  return Math.min(candiesToEachChild, numberOfKinds);
 };
 
 /*
@@ -23,10 +23,10 @@ Time complexity : O(n). The entire candies array is traversed only once.
 */
 
 const distributeCandies2 = (candies) => {
-    const kinds = new Set(candies);
-    const candiesToEachChild = candies.length / 2;
-    const numberOfKinds = kinds.size;
-    return Math.min(candiesToEachChild, numberOfKinds);
+  const kinds = new Set(candies);
+  const candiesToEachChild = candies.length / 2;
+  const numberOfKinds = kinds.size;
+  return Math.min(candiesToEachChild, numberOfKinds);
 };
 
 /*

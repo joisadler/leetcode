@@ -5,33 +5,33 @@ We parse through every element in the given array once, and do O(1) work for eac
 Space Complexity: O(n), the space used to store our stack.
 */
 const calPoints = (ops) => {
-    const stack = ops.reduce((acc, operation) => {
-        const operationIsNumber = !isNaN(Number(operation));
-        if (operationIsNumber) {
-            acc.push(Number(operation));
-        }
-        const previousScore = acc[acc.length - 1];
-        const prePreviousScore = acc[acc.length - 2];
-        switch (operation) {
-        case '+':
-            acc.push(previousScore + prePreviousScore);
-            break;
-        case 'D':
-            acc.push(previousScore * 2);
-            break;
-        case 'C':
-            acc.pop();
-            break;
-        default:
-        }
-        return acc;
-    }, []);
+  const stack = ops.reduce((acc, operation) => {
+    const operationIsNumber = !isNaN(Number(operation));
+    if (operationIsNumber) {
+      acc.push(Number(operation));
+    }
+    const previousScore = acc[acc.length - 1];
+    const prePreviousScore = acc[acc.length - 2];
+    switch (operation) {
+      case '+':
+        acc.push(previousScore + prePreviousScore);
+        break;
+      case 'D':
+        acc.push(previousScore * 2);
+        break;
+      case 'C':
+        acc.pop();
+        break;
+      default:
+    }
+    return acc;
+  }, []);
 
-    const sum = stack.reduce((acc, elem) => {
-        acc += elem; // eslint-disable-line
-        return acc;
-    }, 0);
-    return sum;
+  const sum = stack.reduce((acc, elem) => {
+      acc += elem; // eslint-disable-line
+    return acc;
+  }, 0);
+  return sum;
 };
 
 console.log(calPoints(['5', '2', 'C', 'D', '+'])); // 30
