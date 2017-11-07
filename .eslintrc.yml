@@ -17,3 +17,4 @@ rules:
   no-console: 0
   no-nested-ternary: 0
   max-len: ["error", { "ignoreComments": true }]
+  no-bitwise: ["error", { "allow": [">>>"] }]
