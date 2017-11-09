@@ -3,10 +3,10 @@ Given a List of words, return the words that can be typed using letters of **alp
 ![American keyboard](keyboard.png)
 
 **Example 1:**
-```
-Input: ["Hello", "Alaska", "Dad", "Peace"]
-Output: ["Alaska", "Dad"]
-```
+<pre>
+<b>Input:</b> ["Hello", "Alaska", "Dad", "Peace"]
+<b>Output:</b> ["Alaska", "Dad"]
+</pre>
 
 **Note:**
 1. You may use one character in the keyboard more than once.
