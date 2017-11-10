@@ -1,5 +1,6 @@
 /**
 Probably, working solution, but does not pass the time limit on very large inputs (more than 10000 characters).
+O(n^2)?
 */
 const countBinarySubstrings = (s) => {
   const nums = s.split('').map(e => Number(e));
@@ -25,7 +26,28 @@ const countBinarySubstrings = (s) => {
   return count;
 };
 
+/**
+Short and easy O(n) accepted solution, not mine :(((
+*/
+const countBinarySubstrings2 = (s) => {
+  let ans = 0;
+  let prev = 0;
+  let cur = 1;
+  for (let i = 1; i < s.length; i += 1) {
+    if (s[i - 1] !== s[i]) {
+      ans += Math.min(prev, cur);
+      prev = cur;
+      cur = 1;
+    } else {
+      cur += 1;
+    }
+  }
+  return ans + Math.min(prev, cur);
+};
+
 console.log(countBinarySubstrings('00110011')); // 6
 console.log(countBinarySubstrings('000111000')); // 6
 console.log(countBinarySubstrings('10101')); // 4
 console.log(countBinarySubstrings('00110')); // 3
+
+export { countBinarySubstrings, countBinarySubstrings2 };
