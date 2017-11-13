@@ -7,7 +7,7 @@ const findDisappearedNumbers = nums =>
   .filter(e => !nums.includes(e));
 
 /**
-// Accepted solution based on hash table. O(n)
+ Accepted solution based on hash table. O(n)
 */
 const findDisappearedNumbers2 = (nums) => {
   const completedNums = [];
