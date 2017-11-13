@@ -27,7 +27,7 @@ const findDisappearedNumbers2 = (nums) => {
 };
 
 console.log(findDisappearedNumbers2([4, 3, 2, 7, 8, 2, 3, 1])); // [5, 6]
-console.log(findDisappearedNumbers2([1, 1])); // [2] 3 2  3 -1
+console.log(findDisappearedNumbers2([1, 1])); // [2]
 console.log(findDisappearedNumbers2([2, 2])); // [1]
 console.log(findDisappearedNumbers2([1, 1, 2, 2])); // [3, 4]
 
