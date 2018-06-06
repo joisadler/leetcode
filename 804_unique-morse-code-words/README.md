@@ -24,6 +24,6 @@ There are 2 different transformations, "--...-." and "--...--.".
 
 **Note:**
 
-- The length of words will be at most 100.
-- Each words[i] will have length in range [1, 12].
-- words[i] will only consist of lowercase letters.
+- The length of `words` will be at most `100`.
+- Each `words[i]` will have length in range `[1, 12]`.
+- `words[i]` will only consist of lowercase letters.
