@@ -20,7 +20,7 @@ we need two full lines and one line with 60 units.
 widths = [4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]
 S = "bbbcccdddaaa"
 <b>Output:</b> [2, 4]
-<b>Explanation:</b>
+<b>Explanation: </b>
 All letters except 'a' have the same length of 10, and
 "bbbcccdddaa" will cover 9 * 10 + 2 * 4 = 98 units.
 For the last 'a', it is written on the second line because
