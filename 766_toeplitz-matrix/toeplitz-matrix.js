@@ -9,3 +9,5 @@ const isToeplitzMatrix = (matrix) => {
   }
   return true;
 };
+
+export default isToeplitzMatrix;
