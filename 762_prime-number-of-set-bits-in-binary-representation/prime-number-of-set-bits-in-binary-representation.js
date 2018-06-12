@@ -23,3 +23,5 @@ const countPrimeSetBits = (L, R) => {
   }
   return result;
 };
+
+export default countPrimeSetBits;
