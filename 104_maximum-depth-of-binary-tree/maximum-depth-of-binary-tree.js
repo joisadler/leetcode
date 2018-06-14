@@ -38,4 +38,8 @@ const maxDepth = (node) => {
   return levels.length;
 };
 
+// Brilliant one-line solution, but not mine :(
+/* eslint-disable no-confusing-arrow, max-len */
+const maxDepth1 = node => (node === null) ? 0 : Math.max(maxDepth1(node.left), maxDepth1(node.right)) + 1;
+
 export default maxDepth;
