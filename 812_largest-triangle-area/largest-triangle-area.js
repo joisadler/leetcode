@@ -1,4 +1,4 @@
-// Brute force mrthod, using Heron's formula
+// Brute force method, using Heron's formula
 const distance = (point1, point2) => {
   const [x1, y1] = point1;
   const [x2, y2] = point2;
