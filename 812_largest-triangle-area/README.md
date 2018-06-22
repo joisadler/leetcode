@@ -14,5 +14,5 @@ Notes:
 
 - `3 <= points.length <= 50`.
 - No points will be duplicated.
-- ``-50 <= points[i][j] <= 50`.
+- `-50 <= points[i][j] <= 50`.
 - Answers within `10^-6` of the true value will be accepted as correct.
