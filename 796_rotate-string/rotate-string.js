@@ -1,4 +1,4 @@
-// Brute Force
+// Brute Force approach. SUDDENLY the fastest!
 const rotateString = (A, B) => {
   if (A === B) return true;
   if (A.length !== B.length) return false;
@@ -10,6 +10,10 @@ const rotateString = (A, B) => {
   return false;
 };
 
+// Simple check approach.
+const rotateString1 = (A, B) =>
+  A.length === B.length && (A + A).includes(B);
+
 console.log(rotateString('abcde', 'cdeab'));
 // true
 console.log(rotateString('abcde', 'abced'));
@@ -17,4 +21,4 @@ console.log(rotateString('abcde', 'abced'));
 console.log(rotateString('', ''));
 // true
 
-export default rotateString;
+export { rotateString, rotateString1 };
