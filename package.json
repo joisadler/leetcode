@@ -1,32 +1,25 @@
 {
   "name": "leetcode",
   "version": "1.0.0",
-  "description": "My solutions for [LeetCode](https://leetcode.com/) problems.",
-  "main": "",
-  "scripts": {
-    "test": "jest",
-    "babel-node": "babel-node",
-    "eslint": "eslint"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joisadler/leetcode.git"
-  },
+  "description": "my solutions for leetcode problems",
+  "main": "index.js",
+  "repository": "https://github.com/joisadler/leetcode.git",
   "author": "Yossi Adler <joisadler@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joisadler/leetcode/issues"
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest"
   },
-  "homepage": "https://github.com/joisadler/leetcode#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-eslint": "^7.2.3",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-jest": "^20.0.3",
-    "jest": "^20.0.4"
+    "@babel/core": "^7.22.6",
+    "@babel/preset-env": "^7.22.6",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^27.2.2",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "^29.6.0"
   }
 }
