@@ -1,4 +1,4 @@
-import twoSum from '../../src/001_two-sum';
+import twoSum from '../../src/solutions/0001_two-sum';
 
 const arr1 = [2, 7, 11, 15];
 const arr2 = [3, 3];
