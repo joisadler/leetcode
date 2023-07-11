@@ -17,7 +17,7 @@ const addTwoNumbers = function(l1, l2) {
   const iter = (l1, l2, carry) => {
     const currentTerm1 = l1?.val || 0
     const currentTerm2 = l2?.val || 0
-    
+
     const sum = currentTerm1 + currentTerm2 + carry;
     const reminder = sum % 10
     const newCarry = Math.floor(sum / 10);
