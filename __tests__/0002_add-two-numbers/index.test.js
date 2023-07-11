@@ -1,8 +1,6 @@
 import addTwoNumbers from '../../src/solutions/0002_add-two-numbers';
 import arrayToSinglyLinkedList from '../../src/utils/arrayToSinglyLinkedList';
 
-console.log(typeof addTwoNumbers)
-
 const l1_1 = arrayToSinglyLinkedList([2,4,3]);
 const l2_1 = arrayToSinglyLinkedList([5,6,4]);
 const expectedOutput_1 = arrayToSinglyLinkedList([7,0,8]);
